@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<table th:each="dve:${device_loglist}">
+    <tr>
+        <td th:text="${dve.devicename}"></td>
+        <td th:text="${dve.type}"></td>
+        <td th:text="${dve.msg}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
