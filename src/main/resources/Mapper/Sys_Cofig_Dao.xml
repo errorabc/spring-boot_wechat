@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.run.Dao.Sys_Cofig_Dao">
+    <select id="get" resultType="com.example.demo.run.Entity.sys_config">
+    select * from system_configuration where name=#{name}
+    </select>
+</mapper>
